@@ -1,0 +1,11 @@
+<div
+  class="column"
+  [ngStyle]="{
+    'justify-content': config.properties.mainAxisAlignment,
+    'align-items': config.properties.crossAxisAlignment,
+  }"
+>
+  <ng-container *ngFor="let childConfig of config.properties.children">
+    <app-scaffold [config]="childConfig"></app-scaffold>
+  </ng-container>
+</div>

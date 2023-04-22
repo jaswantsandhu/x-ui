@@ -1,0 +1,11 @@
+<div
+  [style.width.px]="config.properties.width"
+  [style.height.px]="config.properties.height"
+  [style.margin.px]="config.properties.margin"
+  [style.padding.px]="config.properties.padding"
+  [style.background-color]="config.properties.backgroundColor"
+  [ngStyle]="config.properties.style"
+  [ngClass]="config.properties.class"
+>
+  <app-scaffold *ngIf="config.properties.child" [config]="config.properties.child"></app-scaffold>
+</div>

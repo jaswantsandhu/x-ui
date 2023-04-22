@@ -1,0 +1,11 @@
+<div
+  class="row"
+  [style.justify-content]="config.properties.mainAxisAlignment"
+  [style.align-items]="config.properties.crossAxisAlignment"
+  [ngStyle]="config.properties.style"
+  [ngClass]="config.properties.class"
+>
+  <ng-container *ngFor="let child of config.properties.children">
+    <app-scaffold [config]="child"></app-scaffold>
+  </ng-container>
+</div>
