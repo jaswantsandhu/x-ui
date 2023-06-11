@@ -19,7 +19,10 @@
           "apps/x-ui-angular/src/favicon.ico",
           "apps/x-ui-angular/src/assets"
         ],
-        "styles": ["apps/x-ui-angular/src/styles.scss"],
+        "styles": [
+          "apps/x-ui-angular/src/styles.scss",
+          "node_modules/bootstrap/dist/css/bootstrap.min.css"
+        ],
         "scripts": []
       },
       "configurations": {

@@ -9,10 +9,10 @@ import { ComponentConfig } from "../../interfaces/component-config.interface";
 import { ComponentTypeService } from "../../services/component-type.service";
 
 @Component({
-  selector: "app-scaffold",
-  template: "<ng-container #componentHost></ng-container>",
+  selector: "builder",
+  template: "<ng-container  #componentHost></ng-container>",
 })
-export class ScaffoldComponent implements OnInit {
+export class BuilderComponent implements OnInit {
   @Input() config!: ComponentConfig;
   @Input() data?: any;
   @ViewChild("componentHost", { read: ViewContainerRef, static: true })

@@ -9,7 +9,7 @@ export interface ListingConfig extends BaseComponentConfig {
   type: "listing";
   properties: {
     dataSource: any[] | Observable<any[]>;
-    itemComponent: ComponentConfig;
+    builder(snapshot: any, index: number): ComponentConfig;
     pageSize?: number;
     filterFn?: (data: any[], searchText: string) => any[];
     noResultsText?: string;

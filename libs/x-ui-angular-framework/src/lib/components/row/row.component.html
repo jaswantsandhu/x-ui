@@ -6,6 +6,6 @@
   [ngClass]="config.properties.class"
 >
   <ng-container *ngFor="let child of config.properties.children">
-    <app-scaffold [config]="child"></app-scaffold>
+    <builder [config]="child"></builder>
   </ng-container>
 </div>
